@@ -5,4 +5,4 @@ services:
     cpu_shares: 0.1
     mem_limit: 50m
     ports:
-      - "80:80"
+      - "80"

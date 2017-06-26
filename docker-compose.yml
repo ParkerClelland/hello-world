@@ -5,4 +5,14 @@ services:
     cpu_shares: 0.1
     mem_limit: 50m
     ports:
-      - "80"
+      - "80:80"
+    networks:
+      - hello-world
+  visualizer:
+    image: dockersamples/visualizer:stable
+    ports:
+      - "8080:8080"
+    volumes: 
+      - "/var/run/docker.sock:/var/run/docker.sock"
+    networks:
+      - hello-world

@@ -1,7 +1,7 @@
 version: "2"
 services:
   web:
-    image: 816004290214.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
+    image: XXXXXXXXXXXX.dkr.ecr.us-east-1.amazonaws.com/hello-world:latest
     cpu_shares: 0.1
     mem_limit: 50m
     ports:
